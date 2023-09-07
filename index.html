@@ -10,15 +10,29 @@
     <!-- tailwind and daisy ui link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- tail custom script  -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+         backgroundImage:{
+            'hero-bg': "url('./images/yellow-bg.jpg')"
+         }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
+    <!-- header start  -->
     <header>
         <!-- nav start  -->
         <nav>
             <div class="navbar bg-blue-300">
                 <div class="flex-1">
-                  <a class="btn btn-ghost normal-case text-2xl text-white drop-shadow-2xl">ManDailyProduct</a>
+                  <a class="btn btn-ghost normal-case text-2xl text-white drop-shadow-2xl bg-blue-400">ManDailyProduct</a>
                 </div>
                 <div class="flex-none">
                   <div class="dropdown dropdown-end">
@@ -59,10 +73,25 @@
               </div>
         </nav>
         <!-- nav end  -->
+
+        <!-- hero sec start  -->
+        <section>
+            <div class="hero min-h-[calc(100vh-65.6px)] bg-hero-bg"  >
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Welcome To DaisyMan</h1>
+                    <p class="mb-5">Your one-stop destination for all your fashion needs. At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                    <button class="btn btn-primary bg-white text-black rounded-full border-none">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- hero sec end -->
     </header>
-
+<!-- header end  -->
     <main>
-
+        
     </main>
 
     <footer>
